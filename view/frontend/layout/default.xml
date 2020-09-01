@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+		<referenceContainer name="footer">
+			<block name="luxinten_test_message" template="Luxinten_TechnicalTaskUnit::footer_message.phtml" ifconfig="luxinten_test/general/module_enable">
+				<arguments>
+					<argument name="message" xsi:type="object">Luxinten\TechnicalTaskUnit\ViewModel\Message</argument>
+				</arguments>
+			</block>
+		</referenceContainer>
+    </body>
+</page>

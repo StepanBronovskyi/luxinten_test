@@ -1,0 +1,7 @@
+<?php
+$viewModel = $block->getMessage();
+$message = $viewModel->getValue();
+?>
+<? if ($message): ?>
+    <p><?= $viewModel->getValue() ?></p>
+<? endif; ?>
