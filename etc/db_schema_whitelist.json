@@ -1,0 +1,17 @@
+{
+    "article": {
+        "column": {
+            "article_id": true,
+            "url": true,
+            "name": true,
+            "description": true,
+            "language": true
+        },
+        "index": {
+            "ARTICLE_NAME_DESCRIPTION": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

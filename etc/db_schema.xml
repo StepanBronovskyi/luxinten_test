@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="article" resource="default" engine="innodb" comment="Articles table">
+		<column xsi:type="int" name="article_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Article ID"/>
+		<column xsi:type="varchar" name="url" comment="Url"/>
+		<column xsi:type="varchar" name="name" comment="Article Name"/>
+		<column xsi:type="mediumtext" name="description" nullable="true" comment="Article Description"/>
+		<column xsi:type="varchar" name="language" comment="Language"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="article_id"/>
+		</constraint>
+		<index referenceId="ARTICLE_TITLE_IDENTIFIER_CONTENT" indexType="fulltext">
+			<column name="name"/>
+			<column name="description"/>
+		</index>
+	</table>
+</schema>
